@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial Black', Arial, sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #000000 100%);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .hero {
+            text-align: center;
+            color: white;
+            max-width: 800px;
+            padding: 2rem;
+        }
+        
+        .main-quote {
+            font-size: clamp(3rem, 5vw, 1rem);
+            font-weight: 1200;
+            text-shadow: 3px 3px 0 #000;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+        
+        .sub-quote {
+            font-size: clamp(1.2rem, 3vw, 2rem);
+            font-weight: 700;
+            opacity: 0.95;
+            margin-bottom: 3rem;
+            font-style: italic;
+        }
+       
+        
+        @media (max-width: 768px) {
+            .hero { padding: 1rem; }
+            .main-quote { letter-spacing: 1px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1 class="main-quote">Risk is better than regret</h1>
+        <p class="sub-quote">
+            No point in fearing after calculated risks.
+        </p>
+    </div>
+</body>
+</html>
